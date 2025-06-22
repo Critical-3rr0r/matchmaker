@@ -725,7 +725,7 @@
                         
                     </div>
                 </div>
-                <button class="bg-gray-950 rounded-xl w-30 self-center hover:bg-gray-700 text-white" onclick={() => {selectedPlayers = []; playersMatched = false;}}>Reset Teams</button>
+                <button class="bg-gray-950 rounded-xl w-30 self-center hover:bg-gray-700 text-white" onclick={() => {selectedPlayers = []; playersMatched = false; deselectAll();}}>Reset Teams</button>
                 <button class="bg-gray-950 rounded-xl w-30 self-center hover:bg-gray-700 text-white mt-5" onclick={matchPlayers}>Reroll teams</button>
                 <h1 class="text-white text-2xl self-center text-center">Elo difference between teams: {eloSpread}</h1>
             {/if}
